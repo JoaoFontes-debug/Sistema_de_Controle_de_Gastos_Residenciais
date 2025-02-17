@@ -1,32 +1,36 @@
 package com.teste.gestaofinanceira.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.apache.catalina.User;
+
+import java.math.BigDecimal;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
+@Entity(name = "transactions")
 public class Transaction {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "description")
     private String description;
 
-    private double value;
+    @Column(name = "amount")
+    private BigDecimal amount;
 
+    @Column(name = "type")
     private String type;
 
-    private Long idUser;
-
+    @JsonBackReference
     @ManyToOne
-    @JoinColumn(name = "FK_user", nullable = false)
-    private User user;
+    @JoinColumn(name = "person_id")
+    private Person person;
 }

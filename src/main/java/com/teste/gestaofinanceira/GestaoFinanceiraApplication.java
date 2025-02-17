@@ -9,7 +9,6 @@ public class GestaoFinanceiraApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(GestaoFinanceiraApplication.class, args);
 
-
 	}
 
 }
