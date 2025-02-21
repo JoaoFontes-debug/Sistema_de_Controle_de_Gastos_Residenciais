@@ -9,6 +9,7 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
+//Classe modelo dos dados das transações
 @Getter
 @Setter
 @AllArgsConstructor

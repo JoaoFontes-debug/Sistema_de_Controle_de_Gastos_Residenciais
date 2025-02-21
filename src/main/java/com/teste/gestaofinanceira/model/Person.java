@@ -8,6 +8,7 @@ import lombok.*;
 
 import java.util.List;
 
+//Classe modelo dos dados do usario
 @Getter
 @Setter
 @NoArgsConstructor

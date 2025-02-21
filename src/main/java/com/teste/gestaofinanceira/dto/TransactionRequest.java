@@ -7,6 +7,7 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
+//Classe de request para as transaction
 @Getter
 @Setter
 @AllArgsConstructor

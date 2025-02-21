@@ -5,6 +5,7 @@ import lombok.Getter;
 
 import java.math.BigDecimal;
 
+//classe de response para o total de cada person especifio.
 @Getter
 @AllArgsConstructor
 public class TotalPersonResponse {

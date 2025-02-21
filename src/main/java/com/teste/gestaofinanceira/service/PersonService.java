@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-
+//Classe reponsável pela aplicaçao da logica para dados relacionados ao
 @Service
 public class PersonService {
 

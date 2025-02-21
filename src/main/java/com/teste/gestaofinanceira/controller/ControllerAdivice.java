@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import java.time.LocalDateTime;
-
+//Classe responsável por lançar uma exception customizada.
 @RestControllerAdvice
 public class ControllerAdivice {
     @ExceptionHandler(BusinessException.class)

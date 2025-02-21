@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+//Classe de dados de request
 @Getter
 @Setter
 @AllArgsConstructor

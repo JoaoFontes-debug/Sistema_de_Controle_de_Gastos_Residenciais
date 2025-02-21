@@ -12,6 +12,7 @@ public class TransactionConverter {
 
     }
 
+    //Converte para uma transaction com id
     public static TransactionResponse toResponse(Transaction transaction) {
         return new TransactionResponse(transaction.getId(),
                 transaction.getDescription(),
